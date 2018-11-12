@@ -119,7 +119,7 @@ of power.
 **Results**
 
 Results were generated for training CNN_RGB and CNN_RGBD. Below are the results for
-CNN_RGB.
+CNN_RGBD and CNN_RGB.
 
 #### Observations
 * One interesting finding is that the manner in which the CNN_RGB and CNN_D output are
@@ -139,3 +139,32 @@ It would be a better idea to implement state-of-the-art algorithms.
 depth and label images were resized and cropped randomly, while the RGB images had
 additional generic changes to augment the data. All of these modifications were able
 to be performed using the Tensorflow API and thus required minimal effort to implement.
+
+
+#### CNN_RGBD
+| Epoch | LOSS | ACCURACY |
+| ------------ | ---------- | ------------- |
+|1   of 10 | 6.704 | 93.95% |
+|2   of 10 | 2.638 | 94.11% |
+|3   of 10 | 2.306 | 94.19% |
+|4   of 10 | 2.135 | 94.21% |
+|5   of 10 | 2.095 | 94.24% |
+|6   of 10 | 2.096 | 94.23% |
+|7   of 10 | 2.063 | 94.22% |
+|8   of 10 | 2.052 | 94.19% |
+|9   of 10 | 2.045 | 94.15% |
+|10  of 10 | 2.067 | 94.06% |
+
+#### CNN_RGB
+| Epoch | LOSS | ACCURACY |
+| ------------ | ---------- | ------------- |
+|1   of 10 | 4.416 | 93.04% |
+|2   of 10 | 2.010 | 93.42% |
+|3   of 10 | 1.794 | 93.57% |
+|4   of 10 | 1.670 | 93.70% |
+|5   of 10 | 1.159 | 93.78% |
+|6   of 10 | 1.529 | 93.83% |
+|7   of 10 | 1.412 | 93.92% |
+|8   of 10 | 1.465 | 93.96% |
+|9   of 10 | 1.448 | 93.98% |
+|10  of 10 | 1.441 | 94.00% |
