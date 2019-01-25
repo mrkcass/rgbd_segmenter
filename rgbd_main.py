@@ -19,6 +19,7 @@ import rgbd_train
 def main():
     # training hyper parameters
     batch_size = 10
+    training_epochs = 10
     learning_rate = 1e-6
     feature_image_width = 300
     feature_image_height = 300
@@ -70,7 +71,7 @@ def main():
     #create the session and traing the model
     with tf.Session() as sess:
         rgbd_train.train_model(sess,
-                               batch_size,
+                               training_epochs,
                                learning_rate,
                                batch_op, dataset_init_op,
                                model,
